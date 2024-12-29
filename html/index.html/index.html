@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Webpage</title>
+    <style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0 0 20px 0;
+    padding: 0px 20px;
+    border: 5px solid rgb(180, 171, 126);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block; 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    background-color: #bc3985;
+    color: white;
+    margin: 0 0 20px 0;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}  
+ .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Adjust the height as needed */
+            text-align: center;
+        }
+
+    .navbar {
+    background-color: #ff481a;
+    color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+   .navbar a {
+    color: rgb(219, 31, 31);
+    background-color: rgb(226, 112, 243);
+    text-decoration: none;
+    padding: 5px 10px;
+    border:#333 1px solid;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+nav ul li {
+    padding: 10px 0; 
+    cursor: pointer;
+    color: rgb(229, 223, 223);
+}
+nav ul li a:hover {
+    color: yellow; 
+    cursor: wait;
+    display: block;
+}#skills{
+    background-color: rgb(24, 97, 126);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.element{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#skills-element {
+    border: 1px solid rgb(12, 72, 13);
+    background-color: rgb(39, 88, 87); 
+    color: rgb(238, 241, 239);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li:last-child a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+div.container > :first-child {
+    border: 1px solid blue;
+}
+table tr:nth-child(even) {
+    background-color: #03251a;
+}
+
+    a[href]{
+    color: rgb(0, 0, 0);
+    background-color: rgb(184, 162, 155);
+    }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+         margin-right: 5px;
+        }
+
+    input[type="checkbox"] {
+    margin-right: 5px;
+    }
+    fieldset {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+        .pagination {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+   .pagination li { 
+    margin: 0 5px;
+    }
+   .pagination a {
+    padding: 8px 16 px;
+    text-decoration: none;
+    background-color: #156676;
+    color: rgb(217, 121, 32);
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline;
+}
+.pagination a:hover {
+    background-color: red;
+}
+    div {
+        border: 1px solid transparent; /* Required for border-image */
+        border-image: url('https://via.placeholder.com/300.png') 30 round;
+        color: #1e87b4;
+    }
+    table{
+        border-collapse: collapse;
+        border: 1;
+    }
+    .certificates-table {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+.flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        flex-direction: row;
+     
+    }
+.centered-text {
+    text-align: center;
+}
+.about-section {
+    margin: 20px;
+    padding: 10px;
+}
+@keyframes moveRight {
+    0% { left: 0; top: 0; }
+    50% { left: 200px; top: 0; }
+    100% { left: 400px; }
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(4, 53, 106);
+    animation: moveRight 5s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+    padding: 10 px;
+    box-sizing: border-box;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row;
+}
+.box p {
+    top: 50%;
+    left: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(240, 239, 239);
+    word-wrap: break-word;
+    margin: 10px;
+    display: flex;
+    font-size: 14px; /* Adjust font size to fit more text */
+    font-weight: bold;
+    word-wrap: break-word;
+     margin: 0;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+          }
+        .linear-gradient {
+            background: linear-gradient(rgb(196, 174, 67), rgb(215, 137, 85));
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        :root{
+    --background-color: white;
+    --text-color: rgb(0, 0, 0);
+        }    
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.dark-mode {
+    --background-color: rgb(1, 1, 0);
+    --text-color: rgb(255, 255, 255);
+}
+.transition-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.transition-button:hover {
+    background-color: #ff5733;
+    transform: scale(1.1);
+}
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+.combined-element {
+    animation: fade 2s ease infinite;
+    transition: color 0.3s ease;
+}
+.combined-element:hover {
+    color: #ff5733;
+}
+.button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch; 
+            background-color: #f8f8f8;
+        }
+        .button-container button {
+            margin-bottom: 10px; /* Space between buttons */
+        }
+</style>
+</head>
+<body>
+
+    <header class="header-container">
+        <h1>Welcome to My<em> Personal Webpage! </em></h1>
+        <p class="centered text">Hi, I'm mahi lohiya. This is where you can learn more about me and my work.</p>
+    </header>
+    <nav>
+        <h2>Navigation</h2>
+        <nav class="navbar">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            
+        </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="about-section">
+        <h2>About Me</h2>
+        <p style="color:rgb(16, 75, 58);"><em>I'm passionate about technology, programming, and learning new things. I love to code and solve complex problems. In my free time, I enjoy gardening, fitness, and arts and crafts.</em></p>
+        <img src="https://www.womenintech.org/wp-content/uploads/2021/07/WIT-Logo-1.png" alt="Women in Tech Logo" style="max-width: 100%; height: auto;">
+     </section>
+        
+    <section id="contact" style="color: rgb(188, 225, 38)">
+        <h2>Contact Me</h2>
+        <p><em>Feel free to reach out to me through the contact form below:</em></p>
+        
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+                <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+                <label for="subscribe">Subscribe to newsletter</label><br><br>
+                <button type="submit" value="Submit" >submit</button>
+            </fieldset>
+        </form>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="element" id="skills-element">
+        <p><em>with a solid background in <strong>Information Science and Engineering</strong>, I have honed a variety of technical and soft skills.</em></p>
+        </div>
+            
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, Java, C</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Data Analysis:</strong> Python (Pandas, NumPy), MATLAB</li>
+            </ul>
+            
+            <h3>Soft Skills</h3>
+            <ul>
+                <li><strong>Communication:</strong> Excellent written and verbal communication, including technical writing and presentations.</li>
+                <li><strong>Teamwork:</strong> Collaborative team player, experienced in Agile environments.</li>
+            </ul>
+    </section>
+    <section class="element" id="certificates" style="color: rgb(14, 120, 92)">
+        <h2>Certificates</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Certificate</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Artificial Intelligence with Python</td>
+                    <td>Great Learning</td>
+                </tr>
+                <tr>
+                    <td>Introduction to Artificial Intelligence</td>
+                    <td>Great Learning</td>
+                </tr>
+                <tr>
+                    <td>Elements of AI</td>
+                    <td>University of Helsinki</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div class="outer-container"> 
+        <div class="example" style="margin: 0; padding: 10px">
+        <h3>you can also reach out to me through these:</h3>
+        <ol>
+            <li><a href="https://www.linkedin.com/in/mahi-lohiya-7b1b3b1b3/">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/mahi_lohiyaa/?igsh=MXNlcXR5OXhldGU2OQ%3D%3D" style="display: block;">Instagram</a></li>
+        </ol>
+        </div>
+    </div>
+
+<div class="box">
+    <div class="box"></div>
+    <p>I'm always on the move—learning, creating, and growing! Whether it's exploring new tech, solving problems, or diving into creative hobbies, I bring energy and adaptability to every challenge I face</p>
+</div>
+
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+    </script>
+    <div class="button-container">
+        <button class="transition-button">button 1</button>
+        <button class="combined-element">button 2</button>
+        <button id="btn">click me</button>
+    </div>
+    <div id="container"></div> 
+    <div class="linear-gradient">
+        <em> "Thanks for stopping by my digital home — hope you had as much fun browsing as I did building it!"</em>
+    </div>
+
+    <ul class="pagination">
+        <li><a href="page1.html">&laquo;</a></li>
+        <li><a href="page1.html">1</a></li>
+        <li><a href="page2.html">2</a></li>
+        <li><a href="page2.html">&raquo;</a></li>
+        <script src="script.js"></script>
+    </ul>
+    </main>
+    </body>
+    </html>
